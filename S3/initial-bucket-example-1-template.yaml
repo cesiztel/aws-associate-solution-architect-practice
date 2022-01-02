@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Initial template to create a simple S3
+Parameters:
+  MyS3BucketName:
+    Description: The bucket name
+    Type: String
+    Default: initial-bucket-solution-architect-example-1
+Resources:
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName:
+        Ref: MyS3BucketName
